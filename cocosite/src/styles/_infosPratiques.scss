@@ -1,0 +1,28 @@
+.mapAndInfos {
+  .map {
+    margin-left: 70px;
+    .mapImg {
+      width: 60%;
+      margin-top: 160px;
+    }
+  }
+  .infos {
+    font-size: 28px;
+    margin-left: 70px;
+
+    p {
+      margin: 0;
+    }
+    .phone,
+    .doctolib {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .mapAndInfos {
+    .infos {
+      width: 75%;
+    }
+  }
+}

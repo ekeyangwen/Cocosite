@@ -1,0 +1,36 @@
+.liens {
+  display: flex;
+  flex-direction: column;
+  .main {
+    margin-top: 118px;
+  }
+  .linkTitle {
+    margin-bottom: 0;
+    text-decoration: underline;
+  }
+  .linkDescription {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .links {
+    margin-top: 20px;
+  }
+  .link {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .liens {
+    .link {
+      margin: 0;
+      display: inline-block;
+      width: 85%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .linkTitle,
+    .linkDescription {
+      width: 90%;
+    }
+  }
+}

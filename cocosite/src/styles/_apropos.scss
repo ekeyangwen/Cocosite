@@ -1,0 +1,31 @@
+.aPropos {
+  display: flex;
+  p {
+    margin: 0;
+  }
+  .portrait {
+    width: 350px;
+    margin-top: 20px;
+    margin-right: 30px;
+    float: left;
+  }
+  .formation {
+    margin-top: 20px;
+  }
+  .formationInitiale,
+  .formationsComplémentaires,
+  .benevolat {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aPropos {
+    // .formation {
+    //   width: 70%;
+    // }
+    .portrait {
+      height: 50%;
+      width: 50%;
+    }
+  }
+}

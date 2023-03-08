@@ -1,0 +1,85 @@
+.pourquoiConsulter {
+  display: flex;
+  .pourquoiOsteopathe {
+    margin-top: 10px;
+  }
+  .motif {
+    margin-top: 0;
+  }
+  .imgColineOsteopathe {
+    height: 500px;
+    width: 350px;
+    margin-top: 18px;
+    margin-right: 30px;
+  }
+  summary {
+    cursor: pointer;
+    font-size: 25px;
+  }
+  summary:hover {
+    color: #fec800;
+  }
+  summary::marker {
+    display: none;
+  }
+  summary:first-of-type {
+    list-style: none;
+  }
+  summary:before {
+    content: ">";
+    float: left;
+    font-size: 30px;
+    padding: 0;
+    text-align: center;
+    margin-right: 15px;
+  }
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+  details {
+    margin-bottom: 30px;
+  }
+
+  .detail,
+  .detailMargin {
+    margin: 0;
+    margin-left: 50px;
+  }
+  .detail {
+    margin-top: 20px;
+  }
+  .detailMargin {
+    margin-top: 20px;
+  }
+  .detailDeDetail {
+    margin-left: 100px;
+  }
+  .NB {
+    font-size: 23px;
+  }
+
+  @supports (background: -webkit-named-image(i)) {
+    summary::before {
+      content: none;
+    }
+    summary {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .pourquoiOsteopathe {
+    width: 90%;
+  }
+  .pourquoiConsulter {
+    summary {
+      display: block;
+    }
+
+    .detail,
+    .detailDeDetail,
+    .detailMargin {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Dauphine";
+  src: local("Dauphine_Regular"),
+    url("../fonts/Dauphine_Regular.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "Dauphine", sans-serif;
+  color: #003670;
+}
+a {
+  text-decoration: none;
+  color: #003670;
+}
+
+.puce {
+  position: fixed;
+}
+#Calque_1 {
+  margin-top: 129px;
+  height: 200px;
+  width: 70px;
+}
+.main {
+  font-size: 28px;
+  margin-top: 140px;
+  margin-left: 70px;
+  width: 85%;
+}
+.doctoLink {
+  color: #003670;
+}
+.doctoImg {
+  height: 50px;
+  vertical-align: middle;
+  width: auto;
+}
+.phone {
+  width: 19%;
+}
+.footerBlanc {
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .puce {
+    display: none;
+  }
+  .main {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
